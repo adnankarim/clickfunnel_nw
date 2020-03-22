@@ -1,0 +1,86 @@
+/* Style the buttons that are used to open and close the accordion panel */
+body{
+  font-family:'Montserrat', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.accordion {
+    background-color:#363535;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-indent: 1em;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    font-family: 'Montserrat', sans-serif;
+
+
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .accordion:hover {
+    background-color: #363528;
+  }
+  .active, .active:hover{
+    background-color: #f8f8f8;
+    color: #666666;
+
+  }
+  /* Style the accordion panel. Note: hidden by default */
+  
+  /* .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  } */
+  .accordion:before {
+    content: '\002B \2007'; /* Unicode character for "plus" sign (+) */
+    font-size: 28px;
+    vertical-align: middle  }
+  
+  .accordion:after {
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+
+  .active:before {
+    content: '\2212 \2007'; /* Unicode character for "minus" sign (-) */
+    font-size: 28px;
+    vertical-align: middle 
+    t
+  }
+
+  /* wrapping basic */
+
+  .wrap_basic{
+      margin: 2% 2%;
+  }
+
+  div.panel {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    background-color: white;
+
+}
+button{
+border: 5px solid black;
+}
+div.panel.show {
+    opacity: 1;
+    height: auto;
+
+}
+
